@@ -19,4 +19,8 @@ Route::get('/mahasiswa', 'MahasiswaController@index');
 
 Route::get('/students', 'StudentsController@index');
 
+Route::get('/students/create', 'StudentsController@create');
+
 Route::get('/students/{student}', 'StudentsController@show');
+
+Route::post('/students', 'StudentsController@store');
